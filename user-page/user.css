@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+table { 
+    margin-top: 100px;
+    border-collapse: collapse;
+    width: 70%;
+  
+}
+
+td,th {
+
+    border: 1px solid #ddd;
+    padding: 8px;
+  
+}
+#invoiceLines{
+ margin-top: 50px;
+}
+.namebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+
+#logout-btn:hover{
+    background-color: red;
+}
+
+button {
+    background-color:#ffffff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+} 
+
+
+.nav-container {
+    display: inline-block;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .hamburger {
+    background: black;
+    position: relative;
+    height: 5px;
+    width: 30px;
+  }
+  .hamburger:before {
+    background: #000;
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 30px;
+    height: 5px;
+  }
+  .hamburger:after {
+    background: #000;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 30px;
+    height: 5px;
+  }
+
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    margin-right: 10px;;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-right: 10px;
+    right: 0;
+}       
+
+.dropbtn:before {
+    background: #000;
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 30px;
+    height: 5px;
+  }
+
+.dropbtn:after {
+    background: #000;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 30px;
+    height: 5px;
+}
+  
+
+.dropdown-content span, button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown span:hover, button:hover {
+    background-color: rgb(243, 242, 242);
+}
+.show {
+    display: block;
+}
+
+img {
+    height: 30px;  
+    width: 30px;
+}
