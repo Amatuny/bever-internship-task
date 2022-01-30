@@ -72,19 +72,19 @@ async function getInvoices() {
             })
             for(let i = 0; i < productsArr.length; i++) {
                 userInvoiceLineQuantity = userInvoiceLine1.filter(obj => {
-                        return obj.ProductId === productsArr[i].ProductId
+                        return obj.ProductId === productsArr[i].ProductId;
                 });
-                total = productsArr[i].Price * userInvoiceLineQuantity[0].Quantity
-                sum += total
+                total = productsArr[i].Price * userInvoiceLineQuantity[0].Quantity;
+                sum += total;
             }
             let tr = document.createElement("tr");
             invoiceTableBody.appendChild(tr);
             for (let j = 0; j < 4; j++) {
               let td = document.createElement("td");
               if (j == 0) {
-                let radioBtn = document.createElement("input")
-                radioBtn.type = "radio"
-                radioBtn.name = "invoice"
+                let radioBtn = document.createElement("input");
+                radioBtn.type = "radio";
+                radioBtn.name = "invoice";
                 radioBtn.value = userInvoices[i].InvoiceId
                 radioBtn.addEventListener('change', function() {
                     let invoicesLinesTableDiv = document.getElementById("invoiceline-table-container");
@@ -143,11 +143,11 @@ async function getInvoices() {
                     }
                     invoicesLinesTableDiv.appendChild(invoiceLineTable);
                 });
-                td.appendChild(radioBtn)
+                td.appendChild(radioBtn);
               } else if (j == 1) {
                 td.appendChild(document.createTextNode(userInvoices[i].Name));
               } else if (j == 2) {
-                let formatedDate = userInvoices[i].PaidDate.split('T')
+                let formatedDate = userInvoices[i].PaidDate.split('T');
                 td.appendChild(document.createTextNode(formatedDate[0]));
               } else if (j == 3) {
                 td.appendChild(document.createTextNode(sum));
@@ -176,5 +176,5 @@ window.onclick = function(event) {
         }
     }
 }
-getInvoiceLine()
-getProduct()
+getInvoiceLine();
+getProduct();

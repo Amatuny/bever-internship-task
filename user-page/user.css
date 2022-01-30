@@ -11,19 +11,14 @@ table {
 }
 
 td,th {
-
     border: 1px solid #ddd;
     padding: 8px;
-  
 }
-#invoiceLines{
- margin-top: 50px;
-}
+
 .namebtn {
     position: absolute;
     top: 0;
     right: 0;
-    
 }
 
 #logout-btn:hover{
@@ -44,14 +39,16 @@ button {
     display: inline-block;
     padding: 20px 0;
     text-align: center;
-  }
-  .hamburger {
+}
+
+.hamburger {
     background: black;
     position: relative;
     height: 5px;
     width: 30px;
-  }
-  .hamburger:before {
+}
+
+.hamburger:before {
     background: #000;
     content: '';
     position: absolute;
@@ -59,8 +56,9 @@ button {
     left: 0;
     width: 30px;
     height: 5px;
-  }
-  .hamburger:after {
+}
+  
+.hamburger:after {
     background: #000;
     content: '';
     position: absolute;
@@ -68,8 +66,7 @@ button {
     top: 10px;
     width: 30px;
     height: 5px;
-  }
-
+}
 
 .dropdown {
     position: absolute;
@@ -78,7 +75,6 @@ button {
     right: 0;
     margin-right: 10px;;
 }
-
 
 .dropdown-content {
     display: none;
@@ -100,7 +96,7 @@ button {
     left: 0;
     width: 30px;
     height: 5px;
-  }
+}
 
 .dropbtn:after {
     background: #000;
@@ -123,6 +119,7 @@ button {
 .dropdown span:hover, button:hover {
     background-color: rgb(243, 242, 242);
 }
+
 .show {
     display: block;
 }
